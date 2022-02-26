@@ -1,0 +1,137 @@
+html {
+    background-image: url('design/teglafal.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+main{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "h h h h"
+        "ar ar ar n"
+        "f f f f";    
+}
+
+
+
+header {
+    grid-area: h;
+    color:white;
+    text-transform: uppercase;  
+    background-image: url('design/beer-new_401732638.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+header h1{
+    padding: 0px 30px 0px 30px;
+ }
+
+article{
+    grid-area: ar;
+    background-color: black;
+    color: white;
+    padding: 15px 15px 15px 15px;
+}
+
+article.kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+img{
+    width: 100%;
+    border: 1px solid rgb(194, 191, 191);
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+}
+
+fieldset.hirlev{
+    display: grid;
+    grid-template-columns: 100px 200px;
+}
+
+label.adat{
+    text-align: right;
+    padding-right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: rgb(92, 89, 89);
+}
+nav {
+    grid-area: n;
+    background-color: rgb(56, 54, 54);
+}
+
+nav ul{
+    padding-left: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px 10px 0px 10px;
+}
+
+nav li{
+    list-style-type: none;
+    border-radius: 7px;
+    border-top: 1px solid rgba(255, 255, 255, 0.678);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.678);
+    padding-left: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    color: rgb(207, 14, 14);
+    font-weight: bold;      
+}
+
+footer{
+    grid-area: f;
+    background-color: rgb(116, 113, 113);
+    color: white;
+    text-align: center;
+    height: 40px;
+    padding: 20px 0px 0px 0px;
+}
+
+@media screen and (max-width: 500px){
+    main{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h"
+            "n"
+            "ar"
+            "f";    
+    }
+     
+    header {
+        height: 250px;
+    }
+  
+    article.kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}

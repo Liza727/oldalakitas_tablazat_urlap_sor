@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simon Elizabeth</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>kell egy jó sör...</h1>
+      </header>
+      <article>
+        <form action="/action_page.php" method="post">
+          <fieldset id="nevek" class="hirlev">
+            <legend>Hírlevél feliratkozás</legend>
+            <label for="vnev" class="adat">Vezetéknév:</label>
+            <input type="text" id="vnev" name="vnev" />
+            <label for="knev" class="adat">Keresztnév:</label>
+            <input type="text" id="knev" name="knev" />
+            <label for="mail" class="adat">Email:</label>
+            <input type="text" id="mail" name="mail" />
+          </fieldset>
+          <fieldset id="szeras">
+            <legend>Szereti a sört?</legend>
+            <input type="radio" id="igen" name="szeras" value="igen" />
+            <label for="igen">Igen</label><br />
+            <input type="radio" id="nem" name="szeras" value="nem" />
+            <label for="nem">Nem</label><br />
+          </fieldset>
+          <fieldset id="marka">
+            <legend>Melyik a kedvenc márkája?</legend>
+            <input type="radio" id="sopi" name="marka" value="Soproni" />
+            <label for="sopi">Soproni</label><br />
+            <input type="radio" id="hein" name="marka" value="Heineken" />
+            <label for="hein">Heineken</label><br />
+            <input type="radio" id="egy" name="marka" value="Egyéb" />
+            <label for="egy">Egyéb</label><br />
+          </fieldset>
+          <label for="w3review">Írja meg kérdését!</label>
+          <textarea id="w3review" name="w3review" rows="4" cols="30">...
+            </textarea>
+          <br />
+          <input type="button" value="Elküld" />
+        </form>
+      </article>
+      <nav>
+        <ul>
+          <li><a href="index.html">Sörök fajtái</a></li>
+          <li><a href="tablazat.html">Táblázat</a></li>
+          <li><a href="hirlevel.html">Hírlevél</a></li>
+        </ul>
+      </nav>
+      <footer>© Minden jog fenntartva!</footer>
+    </main>
+  </body>
+</html>
